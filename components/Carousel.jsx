@@ -30,7 +30,7 @@ export const Carousel = ({}) => {
         <main className="w-full h-full mx-auto rounded-2xl">
             <header></header>
             <section></section>
-            <iframe src={currentSite.url} frameborder="0" width="100%" height="600px" className="rounded-2xl"></iframe>
+            <iframe src={currentSite.url} frameBorder="0" width="100%" height="600px" className="rounded-2xl"></iframe>
             <section className="flex justify-evenly">
                 <button className="w-12 h-12" onClick={() => handleSelectedSiteChange(-1)}>back</button>
                 <button onClick={() => handleSelectedSiteChange(1)}>next</button>

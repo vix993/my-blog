@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       colors: {
         'beige-100': '#FDF0EE'
-      }
+      },
+      fontFamily: {
+        'ubuntu': ['Ubuntu', 'sans-serif'],
+      },
     },
   },
   variants: {

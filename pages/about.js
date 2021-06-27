@@ -45,7 +45,7 @@ export default function About() {
             <strong className="text-yellow-500">Interests:</strong> Rust, AWS,
             Actix, Football, Rust, Basketball, Music and Rust
           </span>
-          <span className="text-2xl">
+          <span className="text-2xl mt-4">
             Give me a shout!{" "}
             <a href="https://www.instagram.com/vic_birth/" target="_blank">
               <Icon

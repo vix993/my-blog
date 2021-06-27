@@ -6,8 +6,8 @@ export const Skill = ({ name }) => {
     useContext(SkillsContext);
 
   const selectedSkill = filteredSkills.includes(name)
-    ? "bg-yellow-500 border border-yellow-100 text-yellow-100"
-    : "bg-yellow-100";
+    ? "border bg-yellow-100"
+    : "bg-yellow-500 border border-yellow-50 text-yellow-50";
 
   return (
     <button

@@ -5,7 +5,7 @@ import Icon from "@material-ui/core/Icon";
 export const SiteView = ({ currentSite }) => {
   return (
     <a
-      className="w-full lg:w-3/12 h-80 mx-auto rounded-2xl lg:mt-4 cursor-pointer transition hover:opacity-80 hover:brightness-70 duration-150 hover:text-gray-700"
+      className="w-full lg:w-3/12 h-80 mx-auto rounded-2xl lg:mt-4 cursor-pointer transition hover:opacity-90 hover:brightness-70 duration-150 hover:text-gray-700"
       href={currentSite.url ? currentSite.url : currentSite.github}
       target="_blank"
     >

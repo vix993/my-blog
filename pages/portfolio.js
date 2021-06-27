@@ -1,14 +1,23 @@
-import Head from "next/head";
+import { useState, useContext, useEffect } from 'react';
+
 import { SiteView } from "../components/SiteView";
 import { Skill } from "../components/Skill";
+import { SkillsContext } from "../contexts/SkillsContext";
 
 const skills = [
   "React",
   "Node",
-  "Typescript/Javascript",
+  "Typescript",
+  "Javascript",
   "Python",
   "Django",
   "Rust",
+  "Frontend",
+  "Backend",
+  "TailwindCSS",
+  "CSS",
+  "HTML",
+  "Algorithms"
 ];
 
 export const websites = [
@@ -18,6 +27,7 @@ export const websites = [
     description: "A skill sharing platform. React, Node, TypeORM.",
     github: "https://github.com/vix993/FrontendForProffy",
     img: "/img/proffy.png",
+    techs: ['React', 'Node', 'TypeORM', 'Typescript', 'Backend', 'Frontend', 'TailwindCSS', 'CSS', 'HTML'],
   },
   {
     url: "https://letmeask-it.vercel.app/",
@@ -26,6 +36,7 @@ export const websites = [
       "A platform in which users can post their questions, for other users to answer or interact with user Q&A's",
     github: "https://github.com/vix993/letmeask",
     img: "/img/letmeask.png",
+    techs: ['React', 'Firebase', 'Typescript', 'Frontend', 'Backend', 'TailwindCSS', 'CSS', 'HTML'],
   },
   {
     url: "https://consume-it.vercel.app/",
@@ -33,13 +44,15 @@ export const websites = [
     description: "An ecommerce interface.",
     github: "https://github.com/vix993/consume-it",
     img: "/img/consume-it.png",
+    techs: ['React', 'Next', 'Frontend', 'Typescript', 'TailwindCSS', 'CSS', 'HTML'],
   },
   {
     url: "https://h-appy.vercel.app/app",
     name: "hAppy",
-    description: "A user based map of Children Homes in London.",
+    description: "A user updated map of Children Homes in London.",
     github: "https://github.com/vix993/hAppy",
     img: "/img/happy.png",
+    techs: ['React', 'Node', 'TypeORM', 'Typescript', 'CSS', 'HTML', 'Frontend', 'Backend'],
   },
   {
     url: "https://cub3d.vercel.app/",
@@ -48,6 +61,7 @@ export const websites = [
     "A javascript implementation of the Raycasting algorithm as coined in Wolfenstein 3D. Arrow keys to move.",
     github: "https://github.com/vix993/cub3d",
     img: "/img/raycasting.png",
+    techs: ['Javascript', 'Algorithms']
   },
   {
     url: "https://move-it-xp.vercel.app/",
@@ -56,6 +70,7 @@ export const websites = [
     "A platform in which users can segment their workflow and be provided with health based challenges.",
     github: "https://github.com/vix993/move-it",
     img: "/img/move-it.png",
+    techs: ['React', 'Typescript', 'TailwindCSS', 'CSS', 'HTML', 'Frontend'],
   },
   {
     url: "https://victorgamedev.netlify.app/",
@@ -63,6 +78,7 @@ export const websites = [
     description: "A Javascript endless scroller.",
     github: "https://github.com/vix993/Life-Death-s-First-Mission",
     img: "/img/life-death.png",
+    techs: ['Javascript', 'P5.js', 'Game Development']
   },
   {
     url: "http://rand-music-dev.herokuapp.com/",
@@ -70,13 +86,15 @@ export const websites = [
     description: "A platform to find random, unfiltered music.",
     github: "https://github.com/vix993/RandMusic",
     img: "/img/rand.png",
+    techs: ['React', 'Node', 'TypeORM', 'Typescript', 'CSS', 'HTML', 'Frontend', 'Backend'],
   },
   {
     url: "https://project-lifeline.herokuapp.com/",
     name: "Project Lifeline",
-    description: "A Zombie Apocalypse survival a communications tool.",
+    description: "An API for a Zombie Apocalypse survival and communications tool.",
     github: "https://github.com/vix993/project-lifeline",
-    img: "",
+    img: "/img/api.jpg",
+    techs: ['Django', 'REST', 'Python', 'Backend'],
   },
   // {
   //   url: "https://desvious-order.vercel.app/",
@@ -89,7 +107,8 @@ export const websites = [
     name: "Life-sort",
     description: "A task management app.",
     github: "https://github.com/vix993/Calendar_Scheduler_React",
-    img: "",
+    img: "/img/life-sort.png",
+    techs: ['React', 'Typescript', 'CSS', 'HTML', 'Frontend'],
   },
   // {
   //   url: "https://afraidat27.netlify.app/",
@@ -104,11 +123,31 @@ export const websites = [
     description:
       "A clone of Pong built using Rust and GGEZ.",
     github: "https://github.com/vix993/pong_with_rust",
-    img: "/img/pong.png"
+    img: "/img/pong.png",
+    techs: ['Rust', 'GGEZ', 'Game Developement'],
   },
 ];
 
 export default function Portfolio() {
+  const { filteredSkills } = useContext(SkillsContext);
+
+  const [filteredProjects, setFilteredProjects] = useState(websites.filter((site => {
+    const isSkillRequired = site.techs.some(tech => filteredSkills.includes(tech));
+    return isSkillRequired;
+  })));
+
+  useEffect(() => {
+    if (filteredSkills.length > 0) {
+      setFilteredProjects(websites.filter((site => {
+        const isSkillRequired = site.techs.some(tech => filteredSkills.includes(tech));
+        return isSkillRequired;
+      })));
+    } else {
+      setFilteredProjects(websites);
+    }
+  }, [filteredSkills]);
+
+  console.log(filteredProjects);
   return (
     <main className="flex flex-col gap-8">
       <section>
@@ -126,7 +165,7 @@ export default function Portfolio() {
           <h2>Projects</h2>
           <div className="w w-2/3 h-2 bg-yellow-100"></div>
 	  <section className="w-full flex flex-row flex-wrap gap-8">
-		  {websites.map((site) => {
+		  {filteredProjects.map((site) => {
 			  return <SiteView key={site.name} currentSite={site}/>;
 		  })}
 	  </section>

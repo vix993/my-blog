@@ -34,7 +34,11 @@ export default function About() {
           </span>
           <span>
             I am also a musician, performer and poet, publishing my content
-            under Desvious Order. <Icon component={MusicNoteIcon}></Icon>{" "}
+            under{" "}
+            <a className="rounded-md p-1 bg-yellow-500" href="https://open.spotify.com/artist/03Ka7Eewewpe6Kw5lRmXbv?si=sMFzOwk1Qqi-7YSpxw5umA&dl_branch=1" target="_blank">
+              Desvious Order.
+            </a>{" "}
+            <Icon component={MusicNoteIcon}></Icon>{" "}
             <Icon component={MusicNoteIcon}></Icon>
           </span>
           <span>

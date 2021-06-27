@@ -1,5 +1,7 @@
 import { useState, useContext, useEffect } from 'react';
 
+import Head from 'next/head';
+
 import { SiteView } from "../components/SiteView";
 import { Skill } from "../components/Skill";
 import { SkillsContext } from "../contexts/SkillsContext";
@@ -150,6 +152,9 @@ export default function Portfolio() {
   console.log(filteredProjects);
   return (
     <main className="flex flex-col gap-8">
+      <Head>
+      <title>Victor Nascimento | Portfolio</title>
+      </Head>
       <section>
         <div className="text-7xl font-bold rounded-2xl p-6 bg-yellow-500 flex flex-row">
           <h2 className="border-r-8 px-4 border-yellow-100">Skills</h2>

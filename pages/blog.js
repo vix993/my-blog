@@ -33,7 +33,7 @@ function ListBlogItem({ slug, title, date, content }) {
     <div className="border border-yellow-100 shadow hover:shadow-lg hover:border-yellow-200 rounded-lg p-4 transition duration-400 ease-in-out">
       <div>
         <Link href={`/blog/${slug}`}>
-          <a className="text-lg font-bold">{title}</a>
+          <a className="text-lg font-bold hover:text-yellow-500">{title}</a>
         </Link>
       </div>
       <div className="text-gray-600 text-sm">

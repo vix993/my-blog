@@ -15,6 +15,11 @@ export default function Blog() {
         <h1 className="text-6xl font-bold text-center my-8">My Blog</h1>
       </header>
       <div className="space-y-4">
+        {!(blogPosts.length > 0) && (
+          <div className="border border-yellow-100 shadow hover:shadow-lg hover:border-yellow-200 rounded-lg p-4 transition duration-400 ease-in-out text-xl">
+            Coming soon!
+          </div>
+        )}
         {blogPosts.map((item) => (
           <ListBlogItem key={item.slug} {...item} />
         ))}

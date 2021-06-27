@@ -7,7 +7,7 @@
     @apply bg-gray-100 font-ubuntu;
   }
   h1 {
-    @apply text-7xl font-bold rounded-2xl p-6 bg-yellow-500;
+    @apply text-6xl font-bold rounded-2xl p-6 bg-yellow-500;
   }
   a {
     @apply text-gray-900 hover:text-yellow-100;

@@ -50,7 +50,7 @@ export const Header = ({}) => {
             </a>
           </li>
         </ul>
-          <ul className="hidden sm:flex flex-row space-x-4 text-3xl gap-4 ml-auto mr-8">
+          <ul className="hidden sm:flex items-center flex-row space-x-4 text-3xl md:gap-2 lg:gap-4 ml-auto mr-8">
             <li>
               <Link href="/">
                 <a>Home</a>
@@ -72,7 +72,7 @@ export const Header = ({}) => {
               </Link>
             </li>
           </ul>
-          <div className="flex ml-auto h-full w-3/12 items-center p-2 justify-end">
+          <div className="flex ml-auto h-full w-3/12 items-center p-2 justify-end sm:hidden">
           <Icon className="cursor-pointer text-3xl" aria-label="toggle menu" className="flex sm:hidden" component={MenuIcon} onClick={() => toggleDrawer()}></Icon>
           <Drawer open={drawerOpen} onClose={() => toggleDrawer()}>
           <List component="nav" className={classes.root}>

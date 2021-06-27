@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const SkillsContext = createContext({});
 
 export const SkillsContextProvider = (props) => {
-  const [filteredSkills, setFilteredSkills] = useState(["React"]);
+  const [filteredSkills, setFilteredSkills] = useState([]);
 
   const addFilteredSkill = (newFilter) => {
     setFilteredSkills([...filteredSkills, newFilter]);

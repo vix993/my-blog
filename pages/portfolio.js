@@ -208,7 +208,7 @@ export default function Portfolio() {
         <title>Victor Nascimento | Portfolio</title>
       </Head>
       <section>
-        <div className="text-7xl font-bold rounded-2xl p-6 bg-yellow-500 flex flex-col sm:flex-row">
+        <div className="text-5xl sm:text-7xl font-bold rounded-2xl p-6 bg-yellow-500 flex flex-col sm:flex-row">
           <h2 className="sm:border-r-8 px-4 border-yellow-100">Skills</h2>
           <section className="flex flex-row flex-wrap gap-2 px-3 mt-4 sm:mt-0">
             {skills.map((skill, i) => {

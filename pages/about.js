@@ -12,11 +12,10 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="" />
+      <title>Victor Nascimento | Portfolio</title>
       </Head>
 
-      <main className="flex flex-col gap-6 flex-wrap items-center">
+      <main className="flex flex-col gap-6 flex-wrap items-center py-4">
         <h1 className="flex justify-center items-center">About</h1>
         <span className="flex flex-col justify-center items-center gap-3 text-lg rounded-2xl leading-8 max-w-xl">
           <span className="flex items-center text-2xl gap-4">

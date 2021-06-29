@@ -37,13 +37,13 @@ export const Header = ({}) => {
       <nav className="flex flex-row w-full h-full">
         <ul className="flex flex-row gap-4 ml-8 items-center">
           <li>
-            <a className="text-sm" href="https://github.com/vix993" target="_blank">
+            <a className="max-h-full" href="https://github.com/vix993" target="_blank">
               <Icon component={GitHubIcon}></Icon>
             </a>
           </li>
           <li>
             <a
-            className="text-sm"
+            className="max-h-full"
               href="https://www.linkedin.com/in/victor-nascimento-dev/"
               target="_blank"
             >

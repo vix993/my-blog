@@ -36,9 +36,9 @@ export const Header = ({}) => {
     <header className="w-screen h-20 flex items-center px-8 border-b-2 border-yellow-200 bg-yellow-500">
       <nav className="flex flex-row w-full h-full">
         <ul className="flex flex-row gap-4 ml-8 items-center">
-          {/* <li>
+          <li>
             <a href="https://github.com/vix993" target="_blank">
-              <Icon component={GitHubIcon}></Icon>
+              <Icon fontSize="medium" component={GitHubIcon}></Icon>
             </a>
           </li>
           <li>
@@ -46,9 +46,9 @@ export const Header = ({}) => {
               href="https://www.linkedin.com/in/victor-nascimento-dev/"
               target="_blank"
             >
-              <Icon component={LinkedInIcon}></Icon>
+              <Icon fontSize="medium" component={LinkedInIcon}></Icon>
             </a>
-          </li> */}
+          </li>
         </ul>
           <ul className="hidden sm:flex items-center flex-row space-x-4 text-3xl md:gap-2 lg:gap-4 ml-auto mr-8">
             <li>
@@ -73,7 +73,7 @@ export const Header = ({}) => {
             </li>
           </ul>
           <div className="flex ml-auto h-full w-3/12 items-center p-2 justify-end sm:hidden">
-          <Icon className="cursor-pointer text-3xl" aria-label="toggle menu" className="flex sm:hidden" component={MenuIcon} onClick={() => toggleDrawer()}></Icon>
+          <Icon fontSize="medium" className="cursor-pointer text-3xl" aria-label="toggle menu" className="flex sm:hidden" component={MenuIcon} onClick={() => toggleDrawer()}></Icon>
           <Drawer open={drawerOpen} onClose={() => toggleDrawer()}>
           <List component="nav" className={classes.root}>
             <ListItem>

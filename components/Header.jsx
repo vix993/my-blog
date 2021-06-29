@@ -36,20 +36,19 @@ export const Header = ({}) => {
     <header className="w-screen h-20 flex items-center px-8 border-b-2 border-yellow-200 bg-yellow-500">
       <nav className="flex flex-row w-full h-full">
         <ul className="flex flex-row gap-4 ml-8 items-center">
-          <li>
-            <a className="max-h-full" href="https://github.com/vix993" target="_blank">
+          {/* <li>
+            <a href="https://github.com/vix993" target="_blank">
               <Icon component={GitHubIcon}></Icon>
             </a>
           </li>
           <li>
             <a
-            className="max-h-full"
               href="https://www.linkedin.com/in/victor-nascimento-dev/"
               target="_blank"
             >
               <Icon component={LinkedInIcon}></Icon>
             </a>
-          </li>
+          </li> */}
         </ul>
           <ul className="hidden sm:flex items-center flex-row space-x-4 text-3xl md:gap-2 lg:gap-4 ml-auto mr-8">
             <li>

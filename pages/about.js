@@ -12,7 +12,7 @@ export default function About() {
   return (
     <div>
       <Head>
-      <title>Victor Nascimento | About me</title>
+        <title>Victor Nascimento | About me</title>
       </Head>
 
       <main className="flex flex-col gap-6 flex-wrap items-center py-4">
@@ -34,7 +34,11 @@ export default function About() {
           <span>
             I am also a musician, performer and poet, publishing my content
             under{" "}
-            <a className="rounded-md p-1 bg-yellow-500" href="https://open.spotify.com/artist/03Ka7Eewewpe6Kw5lRmXbv?si=sMFzOwk1Qqi-7YSpxw5umA&dl_branch=1" target="_blank">
+            <a
+              className="rounded-md p-1 bg-yellow-500"
+              href="https://open.spotify.com/artist/03Ka7Eewewpe6Kw5lRmXbv?si=sMFzOwk1Qqi-7YSpxw5umA&dl_branch=1"
+              target="_blank"
+            >
               Desvious Order.
             </a>{" "}
             <Icon component={MusicNoteIcon}></Icon>{" "}

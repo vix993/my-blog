@@ -13,10 +13,8 @@ export const Skill = ({ name }) => {
     <button
       className={`rounded-lg text-sm max-w-xs p-2 flex justify-center items-center h-8 hover:opacity-70 transition duration-150 ${selectedSkill}`}
       onClick={() => {
-        if (filteredSkills.includes(name))
-          removeFilteredSkill(name);
-        else
-          addFilteredSkill(name);
+        if (filteredSkills.includes(name)) removeFilteredSkill(name);
+        else addFilteredSkill(name);
       }}
     >
       {name}

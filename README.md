@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My Portfolio and Blog:
 
-## Getting Started
+## Content
 
-First, run the development server:
+1. [Status](#Status)
+2. [Motivation](#Motivation) 
+3. [Requirements](#Requirements)
+4. [Pages](#Pages)
+    - [Home](#Home)
+    - [Portfolio](#Portfolio)
+    - [Blog](#Blog)
+    - [About](#About)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Status
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result
+Still implementing CI
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<!-- ![example workflow](https://github.com/vix993/letmeask/actions/workflows/test_on_push.yml/badge.svg) -->
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Motivation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+This repository holds my portfolio, blog and personal website.
 
-## Learn More
+[`vicbirth.com`](https://vicbirth.com/).
 
-To learn more about Next.js, take a look at the following resources:
+In this project, I created a simple next.js app to promote my work and studies.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can run it by cloning the repository. Running `cd my-blog`,`yarn install` then executing the command `yarn dev`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You will be able to access the server on localhost:3000 by default.
 
-## Deploy on Vercel
+## Requirements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Typescript, Tailwind Css, Material UI and more.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Pages
+### *Home*
+
+##### /
+
+###### Introduction
+
+Landing page with my face and function on it.
+
+<img src="./presentation/screenshotLanding.png" alt="screenshot of landing page UI"/>
+<img src="./presentation/screenshotLandingMb.png" alt="screenshot of landing page UI mobile"/>
+
+### *Portfolio*
+
+##### /portfolio
+
+###### List of my projects with filtering
+
+View my personal projects and study repositories.
+
+<img src="./presentation/screenshotPortfolio.png" alt="screenshot of portfolio"/>
+<img src="./presentation/screenshotPortfolioMb.png" alt="screenshot of portfolio mobile"/>
+
+### *Blog*
+
+##### /blog
+
+###### View my recent blog posts
+
+View and engage with my educational content.
+
+<img src="./presentation/screenshotBlog.png" alt="screenshot of blog"/>
+<img src="./presentation/screenshotBlogMb.png" alt="screenshot of blog mobile"/>
+
+### *About*
+
+##### /about
+
+###### About me
+
+A description of my mission and how to contact me.
+
+<img src="./presentation/screenshotAbout.png" alt="screenshot of about"/>
+<img src="./presentation/screenshotAboutMb.png" alt="screenshot of about mobile"/>

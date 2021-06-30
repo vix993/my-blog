@@ -9,7 +9,7 @@ export const SiteView = ({ currentSite }) => {
       href={currentSite.url ? currentSite.url : currentSite.github}
       target="_blank"
     >
-      <div className="w-full rounded-2xl transform transition duration-200 hover:scale-105 hover:shadow-lg">
+      <div className="w-full rounded-2xl transform transition duration-200 hover:scale-105 hover:shadow-xl">
         {currentSite.img && (
           <img
             className="rounded-t-lg"

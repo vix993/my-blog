@@ -85,22 +85,22 @@ export const Header = ({}) => {
             <List component="nav" className={classes.root}>
               <ListItem>
                 <Link href="/">
-                  <a>Home</a>
+                  <span>Home</span>
                 </Link>
               </ListItem>
               <ListItem>
                 <Link href="/portfolio">
-                  <a>Portfolio</a>
+                  <span>Portfolio</span>
                 </Link>
               </ListItem>
               <ListItem>
                 <Link href="/blog">
-                  <a>Blog</a>
+                  <span>Blog</span>
                 </Link>
               </ListItem>
               <ListItem className="ml-auto mr-0">
                 <Link href="/about">
-                  <a>About</a>
+                  <span>About</span>
                 </Link>
               </ListItem>
             </List>

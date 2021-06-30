@@ -46,11 +46,27 @@ export default function About() {
           </span>
           <span>
             <strong className="text-yellow-500">Proficiencies:</strong>{" "}
-            Typescript, React, Node.js, Next.js, Heroku, Django, Docker
+            <div className="flex flex-row flex-wrap my-4 gap-4">
+            <a href="https://reactjs.org/"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" /></a>
+            <a href="https://www.typescriptlang.org/"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-ar21.svg" /></a>
+            <a href="https://www.python.org/"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" /></a>
+            <a href="https://www.djangoproject.com/"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" /></a>
+            <a href="https://docs.docker.com/compose/"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" /></a>
+            <a href="https://nodejs.org/en/"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg" /></a>
+            <a href="https://www.rust-lang.org/"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/rust-lang/rust-lang-ar21.svg" /></a>
+            <a href="https://id.heroku.com/login"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/heroku/heroku-ar21.svg" /></a>
+            <a href="https://www.linux.org/pages/download/"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/linux/linux-ar21.svg" /></a>
+
+            </div>
           </span>
           <span>
-            <strong className="text-yellow-500">Interests:</strong> Rust, AWS,
-            Actix, Football, Rust, Basketball, Music and Rust
+            <strong className="text-yellow-500">Interests:</strong>
+            <div className="flex flex-row flex-wrap my-4 gap-4">
+            <a href="https://aws.amazon.com/"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" /></a>
+            <a href="https://cloud.google.com/"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-ar21.svg" /></a>
+            <a href="https://pytorch.org/"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" /></a>
+            <a href="https://stripe.com/en-br"><img className="w-24" height="50" src="https://www.vectorlogo.zone/logos/stripe/stripe-ar21.svg" /></a>
+            </div>
           </span>
           <span className="text-2xl mt-4">
             Give me a shout!{" "}

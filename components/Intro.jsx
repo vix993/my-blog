@@ -13,6 +13,7 @@ export const Intro = ({}) => {
           src="https://avatars.githubusercontent.com/u/52217652?v=4"
           alt="Victor Nascimento"
         />
+        <span className="text-2xl flex flex-row gap-2">Check out my <div className="rounded-2xl bg-yellow-500 py-1 px-1" ><Link href="/portfolio">work</Link></div></span>
       </div>
     </main>
   );

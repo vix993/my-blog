@@ -38,7 +38,7 @@ export const Header = ({}) => {
         <ul className="flex flex-row gap-4 ml-8 items-center">
           <li>
             <a href="https://github.com/vix993" target="_blank">
-              <Icon fontSize="medium" component={GitHubIcon}></Icon>
+              <Icon fontSize="large" component={GitHubIcon}></Icon>
             </a>
           </li>
           <li>
@@ -46,7 +46,7 @@ export const Header = ({}) => {
               href="https://www.linkedin.com/in/victor-nascimento-dev/"
               target="_blank"
             >
-              <Icon fontSize="medium" component={LinkedInIcon}></Icon>
+              <Icon fontSize="large" component={LinkedInIcon}></Icon>
             </a>
           </li>
         </ul>
@@ -74,7 +74,7 @@ export const Header = ({}) => {
         </ul>
         <div className="flex ml-auto h-full w-3/12 items-center p-2 justify-end sm:hidden">
           <Icon
-            fontSize="medium"
+            fontSize="large"
             className="cursor-pointer text-3xl"
             aria-label="toggle menu"
             className="flex sm:hidden"

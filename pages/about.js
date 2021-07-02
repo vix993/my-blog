@@ -10,7 +10,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 
 export default function About() {
   return (
-    <div>
+    <div className="py-2">
       <Head>
         <title>Victor Nascimento | About me</title>
       </Head>

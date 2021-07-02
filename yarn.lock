@@ -2200,6 +2200,11 @@ regenerator-runtime@^0.13.4:
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz#cac2dacc8a1ea675feaabaeb8ae833898ae46f55"
   integrity sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
 
+render-smooth-image-react@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/render-smooth-image-react/-/render-smooth-image-react-1.0.3.tgz#4b80e5d729370e95e12a3db3e4f0e667e37bfee6"
+  integrity sha512-hfHRaBjLcCY5dB05LIi5dTBcBJnAu8hDeMECHMr3WMDTjCwgMfmy5+6pyAeku4p0NGkwDE8FL5nbyOPq6AuDmQ==
+
 resolve@^1.20.0:
   version "1.20.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"

@@ -1,21 +1,31 @@
+import RenderSmoothImage from "render-smooth-image-react";
+
+import "render-smooth-image-react/build/style.css";
+
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Icon from "@material-ui/core/Icon";
 
 export const SiteView = ({ currentSite }) => {
   return (
-    <a
+    <div
+      onClick={() =>
+        window.open(
+          `${currentSite.url ? currentSite.url : currentSite.github}`,
+          "mywindow"
+        )
+      }
       className="w-full lg:w-5/12 mx-auto rounded-2xl lg:mt-4 cursor-pointer hover:text-gray-700"
-      href={currentSite.url ? currentSite.url : currentSite.github}
-      target="_blank"
     >
       <div className="w-full rounded-2xl transform transition duration-200 hover:scale-105 hover:shadow-xl">
         {currentSite.img && (
-          <img
-            className="rounded-t-lg"
-            src={currentSite.img}
-            alt={currentSite.name}
-          />
+          <div>
+            <RenderSmoothImage
+              imageProps={{ className: "rounded-t-lg h-full w-full" }}
+              src={currentSite.img}
+              alt={currentSite.name}
+            />
+          </div>
         )}
 
         <footer className="bg-yellow-100 rounded-b-lg flex gap-2 p-2 justify-center items-center">
@@ -36,6 +46,6 @@ export const SiteView = ({ currentSite }) => {
           <span className="text-sm">{currentSite.description}</span>
         </footer>
       </div>
-    </a>
+    </div>
   );
 };

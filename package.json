@@ -12,10 +12,10 @@
     "@material-ui/icons": "^4.11.2",
     "autoprefixer": "^10.2.5",
     "date-fns": "^2.21.1",
-    "next": "10.1.3",
+    "next": "^11.0.1",
     "postcss": "^8.2.12",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "render-smooth-image-react": "^1.0.3",
     "tailwindcss": "^2.1.2"
   },

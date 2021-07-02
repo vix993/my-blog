@@ -2,6 +2,8 @@ import RenderSmoothImage from "render-smooth-image-react";
 
 import "render-smooth-image-react/build/style.css";
 
+import Image from 'next/image';
+
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import Icon from "@material-ui/core/Icon";
@@ -19,13 +21,13 @@ export const SiteView = ({ currentSite }) => {
     >
       <div className="w-full rounded-2xl transform transition duration-200 hover:scale-105 hover:shadow-xl">
         {currentSite.img && (
-          <div>
+
             <RenderSmoothImage
-              imageProps={{ className: "rounded-t-lg h-full w-full" }}
+              imageProps={{className: "rounded-t-lg h-full w-full", loading: "lazy"}}
               src={currentSite.img}
               alt={currentSite.name}
+              
             />
-          </div>
         )}
 
         <footer className="bg-yellow-100 rounded-b-lg flex gap-2 p-2 justify-center items-center">

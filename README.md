@@ -21,7 +21,7 @@ Still implementing CI
 
 This repository holds my portfolio, blog and personal website.
 
-[`vicbirth.com`](https://vicbirth.com/).
+[`https://vic-nasc.vercel.app/`](https://vic-nasc.vercel.app/).
 
 In this project, I created a simple next.js app to promote my work and studies.
 

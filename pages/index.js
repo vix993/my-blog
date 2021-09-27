@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <Head>
-        <title>Victor Nascimento | Full Stack Developer</title>
+        <title>Victor Nascimento | Blockchain Developer</title>
       </Head>
       <Intro />
     </main>

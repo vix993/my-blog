@@ -1,12 +1,15 @@
 import Link from "next/link";
 
-export const Intro = ({}) => {
+export const Intro = ({ }) => {
   return (
     <main>
-      <div className="flex flex-col justify-center items-center gap-12 mt-16 rounded-2xl">
+      <div className="flex flex-col justify-center items-center gap-10 mt-16 rounded-2xl">
         <h1>Blockchain Developer</h1>
-        <span className="text-2xl">
-          Hi. I'm Victor, I enjoy building useful things.
+        <span className="text-2xl flex items-center flex-col gap-4">
+          Hi. I'm Victor, I enjoy building{" "}
+          <Link href="/portfolio">
+            <a className="rounded-md p-2 border border-yellow-500 bg-yellow-50 hover:text-gray-800 hover:bg-yellow-500">useful things</a>
+          </Link>
         </span>
         <img
           className="rounded-full max-h-64"

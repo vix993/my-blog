@@ -4,7 +4,7 @@ export const Intro = ({ }) => {
   return (
     <main>
       <div className="flex flex-col justify-center items-center gap-10 mt-16 rounded-2xl">
-        <h1>Blockchain Developer</h1>
+        <h1>Software Engineer</h1>
         <span className="text-2xl flex items-center flex-col gap-4">
           Hi. I'm Victor, I enjoy building{" "}
           <Link href="/portfolio">
